@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+table{
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+}
+caption{
+    padding: 10px;
+    font-weight: bold;
+    background-color: darkgray;
+}
+td,th{
+    border: 1px solid black;
+    padding: 10px;
+}
+thead, tfoot{
+    background-color: grey;
+    color: white;
+}
+thead tr th {
+    position: sticky;/*DEIXAR O TEXTO FIXO NA ROLAGEM DA TELA*/
+    top: -1px; /*DEIXAR O TEXTO FIXO NA ROLAGEM DA TELA*/
+    background-color: grey;
+}
+tbody > tr:nth-child(even){/*cria efeito zebrado even=par*/
+    background-color: lightgray;
+}
+tbody > tr:nth-child(odd){/* cria efeito zebrado odd=impar */
+    background-color: white;
+}
+td.num{
+    text-align: right;
+}
